@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book appointments with trusted doctors online - Prescripto" />
+    <meta name="theme-color" content="#3B82F6" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/logo-BNCDj_dh.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/header_img-DhAi3lLA.png" as="image" />
+    
+    <!-- DNS prefetch for external domains -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <title>Prescripto - Book Appointments with Trusted Doctors</title>
+    <script type="module" crossorigin src="/assets/index-BeqSwC7l.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-DvM9cOmr.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-DPH0Ivl9.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-BTPxR1Ie.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-CpF0eKKI.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BU77q2bN.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Service Worker registration for caching -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => console.log('SW registered'))
+            .catch(error => console.log('SW registration failed'));
+        });
+      }
+    </script>
+  </body>
+</html>
